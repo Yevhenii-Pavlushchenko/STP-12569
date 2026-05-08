@@ -1,19 +1,25 @@
 :root {
- --font-oswald: "Oswald", sans-serif;
-  --font-michroma: "Michroma", sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+  --font-michroma: 'Michroma', sans-serif;
 
   --active-color: #fc0505;
   --white-color: #ffffff;
   --text-color: #e6e6e6;
   --black-color: #000000;
-  --star-color: #E67136;
-  --yellow-color: #FEBC2F;
+  --star-color: #e67136;
+  --yellow-color: #febc2f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -30,7 +36,6 @@ main {
   flex-grow: 1;
 }
 
-
 h1,
 h2,
 h3,
@@ -41,7 +46,10 @@ h6 {
   color: var(--white-color);
 }
 
-p, span, a, li {
+p,
+span,
+a,
+li {
   font-family: var(--font-michroma);
   color: var(--text-color);
 }
@@ -58,4 +66,3 @@ p, span, a, li {
   clip-path: inset(50%);
   overflow: hidden;
 }
-
