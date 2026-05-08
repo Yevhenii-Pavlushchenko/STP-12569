@@ -1,0 +1,31 @@
+/* .how-to-play {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 918px;
+  width: 100%;
+
+  background-image: url('/how-to-play/how-to-play-mob.png');
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .how-to-play {
+    background-image: url('/how-to-play/how-to-play-mob@2x.png');
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .how-to-play {
+    background-image: url('/how-to-play/how-to-play-desk.png');
+  }
+
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    .how-to-play {
+      background-image: url('/how-to-play/how-to-play-desk@2x.png');
+    }
+  }
+} */
