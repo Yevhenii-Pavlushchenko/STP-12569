@@ -38,10 +38,12 @@ h4,
 h5,
 h6 {
   font-family: var(--font-oswald);
+  color: var(--white-color);
 }
 
 p, span, a, li {
   font-family: var(--font-michroma);
+  color: var(--text-color);
 }
 
 .visually-hidden {
