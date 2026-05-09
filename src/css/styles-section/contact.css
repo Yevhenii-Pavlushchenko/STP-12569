@@ -5,7 +5,7 @@
   }
 }
 .box-title {
-  margin-bottom: 24px;
+  margin-bottom: 161px;
 }
 .title-section-img {
   /* margin-bottom: 11px; */
@@ -31,11 +31,11 @@
 .box-image-background {
   background-image: url('../../public/img/contact/bg-contact-mob.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: auto;
+  background-position: bottom;
   width: 100%;
-  height: 192px;
-  padding: 137px 5px 15px;
+  height: 312px;
+  /* padding: 0 5px 15px; */
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .box-image-background {
@@ -104,18 +104,12 @@
 @media only screen and (min-width: 1440px) {
   .contact {
     padding: 60px 0;
-    position: relative;
     .conainer {
       padding: 0 75px;
-      position: relative;
     }
   }
   .box-title {
-    position: absolute;
-    top: 175px;
-    left: 15%;
-    /* z-index: 99; */
-    margin-bottom: 0;
+    margin-bottom: 276px;
   }
   .title-section-img {
     width: 408px;
@@ -124,12 +118,11 @@
   .box-image-background {
     background-image: url('../../public/img/contact/bg-contact-desktop.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
-    width: 80%;
+    width: 100%;
     height: 584px;
-    padding: 513px 0 0;
-    margin: 0 auto;
+    padding: 162px 0 0;
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .box-image-background {
