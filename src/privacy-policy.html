@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +19,29 @@
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
     <main class="main-section">
       <h1 class="visually-hidden">Privacy Policy</h1>
-      <p class="text">
+      <div class="privacy-title-image">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              /img/page-privacy/title-policy-desc.png    1x,
+              /img/page-privacy/title-policy-desc@2x.png 2x
+            "
+          />
+          <source
+            srcset="
+              /img/page-privacy/title-policy-mob.png    1x,
+              /img/page-privacy/title-policy-mob@2x.png 2x
+            "
+          />
+          <img
+            src="/img/page-privacy/title-policy-mob.png"
+            alt="Privacy Policy"
+            aria-hidden="true"
+          />
+        </picture>
+      </div>
+      <p class="date-text text">
         Last Updated:
         <span class="date">2026-04-22</span>
       </p>
