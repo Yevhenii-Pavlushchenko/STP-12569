@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  overflow: hidden;
   padding-top: 0px;
   background-image: url('/img/how-to-play/bg-how-to-play-mob.png');
   @media (-webkit-min-device-pixel-ratio: 2),
@@ -63,7 +62,9 @@
   width: 295px;
   height: 517px;
   margin-right: 0px !important;
-  overflow: hidden !important;
+  overflow: hidden;
+  display: block;
+  z-index: 99;
   @media(min-width: 1440px) {
       width: 413px;
       height: 616px;
@@ -74,9 +75,15 @@
 .swiper-slide {
   width: 250px !important;
   height: 167px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+
     @media(min-width: 1440px) {
-        width: 300px!important;
-        height: 200px!important;
+
+        width: 300px !important;
+        height: 200px !important;
       }
 }
 
@@ -151,6 +158,7 @@
   @media(min-width: 1440px) {
     width: 862px;
     padding-bottom: 60px;
+    padding-left: 108px;
     }
 }
 

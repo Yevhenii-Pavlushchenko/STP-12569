@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Pagination, EffectCoverflow } from 'swiper/modules';
+import { Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -28,12 +28,26 @@ const slidesData = [
 ];
 
 const swiper = new Swiper('.how-to-play-swiper', {
-  modules: [Pagination],
-  direction: 'vertical', // Вертикальное направление
-  slidesPerView: 3, // Видим 3 слайда (активный по центру)
-  centeredSlides: true, // Активный слайд всегда в центре
-  spaceBetween: 8, // Расстояние между слайдами
-  loop: true, // Бесконечная прокрутка
+  modules: [Pagination, Mousewheel, Keyboard],
+
+  direction: 'vertical',
+  slidesPerView: 3,
+  centeredSlides: true,
+  spaceBetween: 8,
+  loop: true,
+  grabCursor: true,
+
+  mousewheel: {
+    invert: false,
+  },
+
+  keyboard: {
+    enabled: true,
+  },
+
+  observer: true,
+  observeParents: true,
+  watchOverflow: true,
 
   pagination: {
     el: '.swiper-pagination',
@@ -41,16 +55,25 @@ const swiper = new Swiper('.how-to-play-swiper', {
   },
 
   on: {
+    init: function () {
+      setTimeout(() => {
+        this.update();
+      }, 200);
+
+      updateContent(this.realIndex);
+    },
     slideChange: function () {
-      const titleEl = document.querySelector('.info-title');
-      const textEl = document.querySelector('.info-text');
-
-      const currentIndex = this.realIndex;
-
-      if (slidesData[currentIndex]) {
-        titleEl.textContent = slidesData[currentIndex].title;
-        textEl.textContent = slidesData[currentIndex].text;
-      }
+      updateContent(this.realIndex);
     },
   },
 });
+
+function updateContent(index) {
+  const titleEl = document.querySelector('.info-title');
+  const textEl = document.querySelector('.info-text');
+
+  if (slidesData[index] && titleEl && textEl) {
+    titleEl.textContent = slidesData[index].title;
+    textEl.textContent = slidesData[index].text;
+  }
+}
