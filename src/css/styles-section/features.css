@@ -1,0 +1,86 @@
+.features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @media (min-width: 1440px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+.features-title-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  @media (min-width: 1440px) {
+    /* justify-content: flex-start; */
+    margin-bottom: 40px;
+  }
+}
+
+.features-title-image img {
+  display: block;
+  height: auto;
+  width: 250px;
+
+  @media (min-width: 1440px) {
+    width: 500px;
+  }
+}
+
+    /* Свайпер */
+
+.features-swiper {
+  /* Размеры для мобилки */
+  width: 300px;
+  height: 252px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: 1440px) {
+    /* Размеры для десктопа */
+    width: 978px;
+    height: 348px;
+  }
+}
+
+.features-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Чтобы картинка заполняла слайд без пустот */
+}
+
+/* --- Пагинация (точки) --- */
+.features-pagination {
+  bottom: -40px !important;
+  /* Выносим под слайдер */
+}
+
+.features-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: var(--white);
+  opacity: 1;
+  margin: 0 6px !important;
+  position: relative;
+}
+
+.features-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+/* Оранжевое кольцо вокруг активной точки */
+.features-pagination .swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ff4500;
+  /* Оранжевый цвет как на фото */
+  border-radius: 50%;
+}
