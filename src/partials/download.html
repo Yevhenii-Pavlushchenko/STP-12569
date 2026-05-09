@@ -1,11 +1,31 @@
 <section class="download">
   <div class="container">
     <h2 class="visually-hidden">Download</h2>
-    <img
-      class="title-img"
-      src="../public/img/download/title-download-mob.png"
-      alt="бетонные буквы с кровью"
-    />
+    <picture class="box-for-img">
+      <source
+        media="(max-width: 1439.98px)"
+        type="image/png"
+        srcset="
+          /img/download/title-download-mob.png    1x,
+          /img/download/title-download-mob@2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 1440px)"
+        type="image/png"
+        srcset="
+          /img/download/title-download-desktop.png    1x,
+          /img/download/title-download-desktop@2x.png 2x
+        "
+      />
+      <img
+        src="/img/download/title-download-mob.png"
+        srcset="/img/download/title-download-mob@2x.png"
+        alt="The concrete letters are caked with zombie blood."
+        class="title-img"
+        loading="lazy"
+      />
+    </picture>
     <ul class="characteristic">
       <li class="characteristic-item">
         <picture class="box-for-img">

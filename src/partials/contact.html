@@ -2,13 +2,33 @@
   <div class="container">
     <h2 class="visually-hidden">Contact</h2>
     <div class="box-title">
-      <img
-        src="/img/contact/title-contact-mob.png"
-        alt="The concrete letters are caked with zombie blood."
-        width="207"
-        height="31"
-        class="title-section-img"
-      />
+      <picture class="box-for-img">
+        <source
+          media="(max-width: 1439.98px)"
+          type="image/png"
+          srcset="
+            /img/contact/title-contact-mob.png    1x,
+            /img/contact/title-contact-mob@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 1440px)"
+          type="image/png"
+          srcset="
+            /img/contact/title-contact-desktop.png    1x,
+            /img/contact/title-contact-desktop@2x.png 2x
+          "
+        />
+        <img
+          src="/img/contact/title-contact-mob.png"
+          srcset="/img/contact/title-contact-mob@2x.png"
+          alt="The concrete letters are caked with zombie blood."
+          width="207"
+          height="31"
+          class="title-section-img"
+          loading="lazy"
+        />
+      </picture>
       <p class="title-contact">Stay connected</p>
       <address class="box-email">
         <span class="title-email">Email:</span>
