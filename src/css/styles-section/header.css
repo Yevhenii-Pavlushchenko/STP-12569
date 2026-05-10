@@ -63,5 +63,8 @@
     &:hover {
       color: var(--active-color);
     }
+    &:active {
+      color: aqua;
+    }
   }
 }
