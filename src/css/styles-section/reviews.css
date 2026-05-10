@@ -1,0 +1,50 @@
+.reviews {
+  padding: 70px 0;
+  background-image: url('/img/faq/bg-faq-mob.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  max-width: 375px;
+  margin: 0 auto;
+
+  .container {
+    padding: 0 16px;
+  }
+}
+.reviews-title-box {
+}
+.reviews-title-img {
+  margin-bottom: 24px;
+}
+.reviews-content-box {
+}
+.reviews-content-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+.for-swiper-after-delete {
+  height: 206px;
+  width: 100%;
+  border: 1px solid rgb(161, 151, 151);
+  text-align: center;
+  padding: 75px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .reviews {
+    padding: 90px 0;
+    background-image: url('/img/faq/bg-faq-desktop.png');
+    max-width: 1440px;
+
+    .container {
+      padding: 0 74px;
+    }
+  }
+  .reviews-title-img {
+    margin-bottom: 40px;
+  }
+  .reviews-content-img {
+    margin-bottom: 40px;
+  }
+}
