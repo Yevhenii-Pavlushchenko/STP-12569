@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   padding: 60px 0;
-  max-width: 1440px;
+  max-width: 375px;
   margin: 0 auto;
 }
 .title-about {
@@ -26,6 +26,7 @@
 @media only screen and (min-width: 1440px) {
   .about {
     padding: 98px 0;
+    max-width: 1440px;
   }
   .title-about {
     font-size: 32px;

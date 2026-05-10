@@ -21,6 +21,7 @@
 @import url('./styles-section/faq.css');
 @import url('./styles-section/contact.css');
 @import url('./styles-section/footer.css');
+@import url('./styles-section/mobile-menu.css');
 
 /* Secondary Page style */
 @import url('./privacy-policy.css');
