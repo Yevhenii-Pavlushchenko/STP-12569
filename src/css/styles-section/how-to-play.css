@@ -97,7 +97,7 @@
 }
 
 
-.swiper-slide-active img {
+.how-to-play-swiper .swiper-slide-active img {
   border-color: var(--active-color);
 }
 
