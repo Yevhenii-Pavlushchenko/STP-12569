@@ -9,24 +9,23 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
   modules: [Pagination, Navigation, Mousewheel, Keyboard],
   centeredSlides: true,
   loop: true,
-
-  // Уходим от auto на фиксированное число
   slidesPerView: 1,
   spaceBetween: 80,
-
-  // Параметры для стабильности loop
   loopedSlides: 5,
 
   breakpoints: {
     1440: {
-      slidesPerView: 3, // Жестко 3 слайда: центр + 2 боковых
-      spaceBetween: 90, // Гэп как по макету
+      slidesPerView: 3,
+      spaceBetween: 90,
     },
   },
 
   pagination: {
     el: '.gallery-pagination',
     clickable: true,
+    modifierClass: 'gallery-pagination-',
+    bulletClass: 'gallery-bullet',
+    bulletActiveClass: 'gallery-bullet-active',
   },
 
   navigation: {
@@ -37,7 +36,6 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
   keyboard: { enabled: true },
   mousewheel: { forceToAxis: true },
 
-  // Убираем лишние апдейты, если они не помогают
   observer: true,
   observeParents: true,
 });

@@ -69,9 +69,8 @@
   }
 }
 
-/* Активный слайд */
 .gallery-swiper-slide.swiper-slide-active {
-  border: 2px solid #ff0000;
+  border: 2px solid var(--active-color);
   z-index: 10;
 
   @media (min-width: 1440px) {
@@ -79,47 +78,71 @@
   }
 }
 
-/* Кнопки и точки */
 .gallery-controls {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
-  margin-top: 24px;
-    @media (min-width: 1440px) {
-        margin-top: 0px;
-      }
-}
+  justify-content: space-between;
+  width: 240px;
+  margin: 24px auto 0;
 
-.gallery-prev,
-.gallery-next {
-  position: static !important;
-  width: 30px !important;
-  height: 30px !important;
-  color: #ff0000 !important;
-  cursor: pointer;
-
-  &::after {
-    font-size: 24px !important;
+  @media (min-width: 1440px) {
+    margin-top: 0px;
   }
 }
 
-.gallery-pagination.swiper-pagination {
+/* Пагинация */
+.gallery-pagination {
   position: static !important;
+  display: flex !important;
+  gap: 24px !important;
   width: auto !important;
-  display: flex;
-  gap: 8px;
+  transform: none !important;
+}
 
-  .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    background: #fff;
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
+.gallery-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: var(--white-color) !important;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: block;
+  opacity: 1 !important;
 
-    &-active {
-      opacity: 1;
-      background: #ff0000;
+  &.gallery-bullet-active {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--yellow-color);
+      border-radius: 50%;
+      box-sizing: border-box;
     }
+  }
+}
+
+/* Кнопки */
+.gallery-prev,
+.gallery-next {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0;
+  color: var(--active-color);
+
+  svg {
+    stroke: currentColor;
+    fill: none;
+    transition: color 0.3s ease;
+  }
+
+  &:hover svg {
+    color: var(--yellow-color);
   }
 }
