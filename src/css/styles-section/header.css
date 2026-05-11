@@ -23,6 +23,7 @@
   margin-left: auto;
 }
 .btn-burger-icon {
+  fill: var(--white-color);
   width: 24px;
   height: 24px;
 }
