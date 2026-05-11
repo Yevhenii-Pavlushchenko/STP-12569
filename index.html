@@ -23,12 +23,12 @@
     <script type="module" crossorigin src="/STP-12569/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-12569/assets/vendor-CZNK-QdU.js">
     <link rel="stylesheet" crossorigin href="/STP-12569/assets/vendor-CCK7RXJZ.css">
-    <link rel="stylesheet" crossorigin href="/STP-12569/assets/styles-B6_ixZmf.css">
+    <link rel="stylesheet" crossorigin href="/STP-12569/assets/styles-ChXM-61n.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <a href="/" class="logo-link">
+    <a href="./" class="logo-link">
       <picture>
         <source
           media="(max-width: 1439.98px)"
@@ -51,34 +51,34 @@
     </a>
     <button class="btn-burger" type="button" data-menu-open>
       <svg class="btn-burger-icon">
-        <use href="/img/sprite.svg#burger-menu"></use>
+        <use href="/STP-12569/sprite.svg#burger-menu"></use>
       </svg>
     </button>
     <nav class="navigation">
       <ul class="list-navigation">
         <li class="item-navigation">
-          <a href="#" class="item-nav-link">About</a>
+          <a href="#about" class="item-nav-link">About</a>
         </li>
         <li class="item-navigation">
-          <a href="#" class="item-nav-link">How to Play</a>
+          <a href="#how-to-play" class="item-nav-link">How to Play</a>
         </li>
         <li class="item-navigation">
-          <a href="#" class="item-nav-link">Features</a>
+          <a href="#features" class="item-nav-link">Features</a>
         </li>
         <li class="item-navigation">
-          <a href="#" class="item-nav-link">Why Download</a>
+          <a href="#why-download" class="item-nav-link">Why Download</a>
         </li>
         <li class="item-navigation">
-          <a href="#" class="item-nav-link">Gallery</a>
+          <a href="#gallery" class="item-nav-link">Gallery</a>
         </li>
         <li class="item-navigation">
-          <a href="#" class="item-nav-link">Reviews</a>
+          <a href="#reviews" class="item-nav-link">Reviews</a>
         </li>
         <li class="item-navigation">
-          <a href="#" class="item-nav-link">FAQ</a>
+          <a href="#faq" class="item-nav-link">FAQ</a>
         </li>
         <li class="item-navigation">
-          <a href="#" class="item-nav-link">Contact</a>
+          <a href="#contact" class="item-nav-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -146,7 +146,7 @@
   </div>
 </section>
 
-      <section class="about">
+      <section id="about" class="about">
   <div class="container">
     <h2 class="title-about">Endless pressure, constant action</h2>
     <ul class="description-list">
@@ -165,7 +165,7 @@
   </div>
 </section>
 
-      <section class="how-to-play">
+      <section id="how-to-play" class="how-to-play">
   <h2 class="visually-hidden">How to Play</h2>
 
   <div class="how-to-play-content">
@@ -279,7 +279,7 @@
   </div>
 </section>
 
-      <section class="features">
+      <section id="features" class="features">
   <div class="container">
     <h2 class="visually-hidden">Game Features</h2>
     <div class="features-title-image">
@@ -508,7 +508,7 @@
   </div>
 </section>
 
-      <section class="download">
+      <section id="why-download" class="download">
   <div class="container">
     <h2 class="visually-hidden">Download</h2>
     <picture class="box-for-img">
@@ -754,8 +754,9 @@
   </div>
 </section>
 
-      
-      <section class="reviews">
+      <!--add id="gallery" in first tag-->
+
+      <section id="reviews" class="reviews">
   <div class="container">
     <picture class="reviews-title-box">
       <source
@@ -799,7 +800,7 @@
   </div>
 </section>
 
-      <section class="faq">
+      <section id="faq" class="faq">
   <div class="container">
     <h2 class="visually-hidden">FAQ</h2>
     <picture class="box-for-img-faq">
@@ -866,7 +867,7 @@
   </div>
 </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
   <div class="container">
     <h2 class="visually-hidden">Contact</h2>
     <!--<div class="box-title">
@@ -905,9 +906,9 @@
         >
       </address>
     </div>-->
-    <div class="box-image-background">
-      <div class="box-title">
-        <picture class="box-for-img">
+    <div class="box-image-background-ct">
+      <div class="box-title-ct">
+        <picture class="box-for-img-ct">
           <source
             media="(max-width: 1439.98px)"
             type="image/png"
@@ -924,7 +925,7 @@
             alt="The concrete letters are caked with zombie blood."
             width="207"
             height="31"
-            class="title-section-img"
+            class="title-section-img-ct"
             loading="lazy"
           />
         </picture>
@@ -979,6 +980,42 @@
     </ul>
   </div>
 </footer>
+
+    <div class="mobile-menu">
+  <div class="container">
+    <button class="mm-close-btn" type="button" data-menu-close>
+      <svg class="btn-close-icon">
+        <use href="/STP-12569/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <ul class="mm-list-navigation">
+      <li class="mm-item-navigation">
+        <a href="#about" class="mm-item-nav-link">About</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#how-to-play" class="mm-item-nav-link">How to Play</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#features" class="mm-item-nav-link">Features</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#why-download" class="mm-item-nav-link">Why Download</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#gallery" class="mm-item-nav-link">Gallery</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#reviews" class="mm-item-nav-link">Reviews</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#faq" class="mm-item-nav-link">FAQ</a>
+      </li>
+      <li class="mm-item-navigation">
+        <a href="#contact" class="mm-item-nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
 
   </body>
