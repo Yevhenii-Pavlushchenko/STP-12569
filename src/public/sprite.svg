@@ -7,9 +7,8 @@
         fill="none">
       <path d="M3 12H21M3 6H21M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-    <symbol id="close" viewBox="0 0 32 32">
-      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667"
-        d="M24 8l-16 16M8 8l16 16"></path>
+    <symbol id="close" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M18 6L6 18M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="star-rating" viewBox="0 0 32 32">
       <path d="M31.667 12.444h-12.096l-3.738-11.503-3.71 15.215 3.71 7.793 9.788 7.11-3.738-11.503 9.784-7.112z"></path>
