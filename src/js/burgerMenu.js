@@ -6,6 +6,7 @@ const navListEl = document.querySelector('.mm-list-navigation');
 openBtnEl.addEventListener('click', () => {
   modalViewEl.classList.add('is-open');
   closeBtnEl.addEventListener('click', handleClose);
+  document.addEventListener('keydown', handleEscClose);
   document.body.classList.add('no-scroll');
 });
 
@@ -13,6 +14,11 @@ const handleClose = () => {
   modalViewEl.classList.remove('is-open');
   document.body.classList.remove('no-scroll');
   closeBtnEl.removeEventListener('click', handleClose);
+  document.removeEventListener('keydown', handleEscClose);
+};
+
+const handleEscClose = e => {
+  if (e.key === 'Escape') handleClose();
 };
 
 navListEl.addEventListener('click', e => {

@@ -1,5 +1,5 @@
 .about {
-  background-color: #000000;
+  background-color: var(--black-color);
   background-image: url('/img/faq/bg-faq.png');
   background-repeat: no-repeat;
   background-size: cover;

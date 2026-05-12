@@ -42,16 +42,16 @@
   }
 }
 .btn-google-play {
-  border: 1px solid #fff;
+  border: 1px solid var(--white-color);
   border-radius: 6px;
   width: 135px;
   height: 40px;
   padding: 6px 8px;
   display: flex;
-  background-color: #000000;
+  background-color: var(--black-color);
   gap: 8px;
   margin-left: auto;
-  transition: border-color 200ms ease-in-out;
+  transition: border-color 300ms ease-in-out;
 }
 .google-img {
   width: 23px;
@@ -64,12 +64,12 @@
 .google-text-up {
   font-family: 'Montserrat', sans-serif;
   font-size: 8px;
-  transition: color 200ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 .google-text-down {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  transition: color 200ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 .btn-google-play:active {
   border-color: var(--active-color);

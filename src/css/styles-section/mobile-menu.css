@@ -67,10 +67,16 @@
   font-family: 'Oswald';
   font-size: 17px;
   font-weight: 600;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.3s ease-in-out;
   &:active {
     color: var(--active-color);
   }
+    &:hover {
+       color: var(--active-color);
+     }
+   &:focus {
+       color: var(--active-color);
+     }
 }
 @media only screen and (min-width: 1440px) {
   .mobile-menu {
