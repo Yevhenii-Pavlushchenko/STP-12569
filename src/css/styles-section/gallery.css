@@ -1,6 +1,8 @@
 .gallery {
   padding: 70px 0;
-  overflow: hidden;
+  overflow-x: clip;
+    width: 100%;
+      position: relative;
 
   @media (min-width: 1440px) {
     padding: 90px 0;
@@ -21,9 +23,6 @@
   margin: 0 auto;
   overflow: hidden;
 
-  @media (min-width: 1440px) {
-    overflow: visible;
-  }
 }
 
 .gallery-swiper {
@@ -34,6 +33,7 @@
       width: 100%;
       max-width: 1304px;
       height: 720px;
+      overflow: hidden;
     }
 
     .swiper-wrapper {
