@@ -12,7 +12,7 @@
 }
 .logo-link {
   display: block;
-  padding: 5px 0;
+  padding: 10px 0;
   margin: 0 auto 0 0;
 }
 .btn-burger {
@@ -20,7 +20,7 @@
   height: 50px;
   background-color: transparent;
   border: none;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 .btn-burger-icon {
   fill: var(--white-color);
@@ -34,6 +34,9 @@
 @media only screen and (min-width: 1440px) {
   .header.container {
     display: block;
+  }
+  .logo-link {
+    padding: 5px 0;
   }
   .logo-img {
     width: 104px;
@@ -69,7 +72,7 @@
       color: var(--active-color);
     }
     &:focus {
-        color: var(--active-color);
+      color: var(--active-color);
     }
     &:active {
       color: var(--active-color);

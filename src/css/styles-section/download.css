@@ -65,7 +65,9 @@
       url('/img/download/desktop/bg-download-desktop.png'),
       url('/img/faq/bg-faq-desktop.png');
     background-repeat: no-repeat;
-    background-size: auto, cover;
+    background-size:
+      450px auto,
+      cover;
     background-position: bottom, center;
     max-width: 1440px;
     margin: 0 auto;
