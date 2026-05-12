@@ -65,7 +65,7 @@
   cursor: pointer;
   list-style: none;
 
-  transition: font-size 150ms ease-out;
+  transition: font-size 300ms ease-out;
 
   &::-webkit-details-marker {
     display: none;
@@ -74,7 +74,7 @@
 .arrow-faq {
   width: 26px;
   height: 26px;
-  transition: transform 250ms ease-out;
+  transition: transform 300ms ease-out;
 }
 .arrow-icon-faq {
   width: 26px;

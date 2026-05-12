@@ -1,5 +1,5 @@
 .header {
-  background-color: #000000;
+  background-color: var(--black-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -63,13 +63,16 @@
     font-size: 17px;
     line-height: 1.05882;
     text-align: center;
-    color: #fff;
-    transition: color 200ms ease-in-out;
+    color: var(--white-color);
+    transition: color 300ms ease-in-out;
     &:hover {
       color: var(--active-color);
     }
+    &:focus {
+        color: var(--active-color);
+    }
     &:active {
-      color: aqua;
+      color: var(--active-color);
     }
   }
 }
