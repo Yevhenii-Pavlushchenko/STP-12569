@@ -1,8 +1,8 @@
 .gallery {
   padding: 70px 0;
   overflow-x: clip;
-    width: 100%;
-      position: relative;
+  width: 100%;
+  position: relative;
 
   @media (min-width: 1440px) {
     padding: 90px 0;
@@ -13,7 +13,6 @@
   display: flex;
   justify-content: flex-start;
   padding-left: 12px;
-
 }
 
 .gallery-swiper-outer {
@@ -22,7 +21,6 @@
   max-width: 1304px;
   margin: 0 auto;
   overflow: hidden;
-
 }
 
 .gallery-swiper {
@@ -30,24 +28,25 @@
   height: 500px;
   overflow: visible;
   @media (min-width: 1440px) {
-      width: 100%;
-      max-width: 1304px;
-      height: 720px;
-      overflow: hidden;
-    }
+    width: 100%;
+    max-width: 1304px;
+    height: 720px;
+    overflow: hidden;
+  }
 
-    .swiper-wrapper {
-      display: flex;
-      align-items: center;
-     }
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .gallery-swiper-slide {
-
   width: 100% !important;
   height: 466px !important;
 
-  transition: transform 0.4s ease, border-color 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease;
   border: 2px solid transparent;
 
   @media (min-width: 1440px) {
@@ -107,7 +106,7 @@
 
   &.gallery-bullet-active {
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 50%;
       left: 50%;
