@@ -11,6 +11,7 @@
 
 /* Sections style */
 @import url('./styles-section/header.css');
+@import url('./styles-section/secondary-header.css');
 @import url('./styles-section/hero.css');
 @import url('./styles-section/about.css');
 @import url('./styles-section/how-to-play.css');
