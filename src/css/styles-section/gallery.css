@@ -24,8 +24,10 @@
 }
 
 .gallery-swiper {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 500px;
+  margin: 0 auto;
   overflow: visible;
   @media (min-width: 1440px) {
     width: 100%;
