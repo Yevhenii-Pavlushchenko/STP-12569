@@ -1,16 +1,14 @@
-
-
 .main-section {
   max-width: 350px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  padding-top: 49px;
+  padding-top: 120px;
 
   @media only screen and (min-width: 1440px) {
     max-width: 1296px;
     margin-bottom: 50px;
-    padding-top: 97px;
+    padding-top: 187px;
   }
 }
 
@@ -22,8 +20,7 @@
 
   @media only screen and (min-width: 1440px) {
     margin-bottom: 122px;
-    }
-
+  }
 }
 
 .privacy-title-image img {
@@ -38,19 +35,19 @@
     height: 85px;
   }
 }
-.section-info{
+.section-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 20px;
 
-  @media(min-width: 1440px) {
+  @media (min-width: 1440px) {
     gap: 28px;
   }
 }
 
-.date-text{
+.date-text {
   margin-bottom: 50px;
 }
 
@@ -69,7 +66,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
-
 }
 
 .date {

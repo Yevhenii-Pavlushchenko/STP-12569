@@ -4,11 +4,15 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
-  .container {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  /* width: calc(100% + 16px); */
+  /* max-width: 375px; */
+  margin: 0 auto;
+  z-index: 1000; /**/
+}
+.header .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .logo-link {
   display: block;
@@ -20,7 +24,6 @@
   height: 50px;
   background-color: transparent;
   border: none;
-  /* margin-left: auto; */
 }
 .btn-burger-icon {
   fill: var(--white-color);
@@ -29,7 +32,7 @@
 }
 .navigation {
   display: none;
-}
+} /*
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .header.container {
@@ -53,7 +56,7 @@
     display: flex;
     flex-direction: row;
     justify-content: end;
-    gap: 60px; /*поигратся после подключения шрифтов*/
+    gap: 60px;
   }
   .item-navigation {
     text-align: center;
