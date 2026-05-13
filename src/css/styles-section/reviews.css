@@ -49,19 +49,21 @@
 }
 
 .reviews-swiper{
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 158px;
   margin: 0 auto;
   overflow: visible;
   @media (min-width:1440px) {
     width: 1260px;
+    max-width: none;
     height: 171px;
   }
 
 }
 
  .reviews-swiper-slide {
-   width: 350px !important;
+   width: 100% !important;
     height: 158px !important;
    @media (min-width:1440px) {
     width: 380px !important;
