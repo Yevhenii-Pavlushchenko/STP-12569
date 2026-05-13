@@ -52,7 +52,7 @@
     </picture>
 
     <div class="reviews-swiper-outer">
-      <div class="swiper reviews-swiper">
+      <div id="reviews-swiper" class="swiper reviews-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide reviews-swiper-slide">
             <div class="review-card">
@@ -179,13 +179,13 @@
       </div>
 
       <div class="reviews-controls">
-        <button type="button" class="reviews-prev">
+        <button type="button" class="reviews-prev" data-reviews-prev>
           <svg width="24" height="24">
             <use href="/sprite.svg#arrow-left"></use>
           </svg>
         </button>
-        <div class="reviews-pagination"></div>
-        <button type="button" class="reviews-next">
+        <div data-reviews-pagination class="reviews-pagination"></div>
+        <button type="button" class="reviews-next" data-reviews-next>
           <svg width="24" height="24">
             <use href="/sprite.svg#arrow-right"></use>
           </svg>

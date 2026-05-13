@@ -2,7 +2,7 @@
   <h2 class="visually-hidden">How to Play</h2>
 
   <div class="how-to-play-content">
-    <div class="swiper how-to-play-swiper">
+    <div id="how-to-play-swiper" class="swiper how-to-play-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
@@ -130,12 +130,12 @@
           </picture>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div data-how-to-play-pagination class="swiper-pagination"></div>
     </div>
 
     <div class="how-to-play-info">
-      <h3 class="info-title title">Enter the Arena</h3>
-      <p class="info-text">
+      <h3 data-how-to-play-title class="info-title title">Enter the Arena</h3>
+      <p data-how-to-play-text class="info-text">
         Start each run in a confined space filled with incoming enemies.
       </p>
     </div>

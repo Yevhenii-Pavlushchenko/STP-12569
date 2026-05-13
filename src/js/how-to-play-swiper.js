@@ -27,7 +27,7 @@ const slidesData = [
   },
 ];
 
-const swiper = new Swiper('.how-to-play-swiper', {
+const swiper = new Swiper('#how-to-play-swiper', {
   modules: [Pagination, Mousewheel, Keyboard],
 
   direction: 'vertical',
@@ -50,7 +50,7 @@ const swiper = new Swiper('.how-to-play-swiper', {
   watchOverflow: true,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '[data-how-to-play-pagination]',
     clickable: true,
   },
 
@@ -69,8 +69,8 @@ const swiper = new Swiper('.how-to-play-swiper', {
 });
 
 function updateContent(index) {
-  const titleEl = document.querySelector('.info-title');
-  const textEl = document.querySelector('.info-text');
+  const titleEl = document.querySelector('[data-how-to-play-title]');
+  const textEl = document.querySelector('[data-how-to-play-text]');
 
   if (slidesData[index] && titleEl && textEl) {
     titleEl.textContent = slidesData[index].title;
