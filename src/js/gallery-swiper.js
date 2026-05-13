@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-const gallerySwiper = new Swiper('.gallery-swiper', {
+const gallerySwiper = new Swiper('#gallery-swiper', {
   modules: [Pagination, Navigation, Mousewheel, Keyboard],
   centeredSlides: true,
   loop: true,
@@ -21,16 +21,15 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
   },
 
   pagination: {
-    el: '.gallery-pagination',
+    el: '[data-gallery-pagination]',
     clickable: true,
-    modifierClass: 'gallery-pagination-',
-    bulletClass: 'gallery-bullet',
-    bulletActiveClass: 'gallery-bullet-active',
+    bulletClass: 'swiper-gallery-bullet',
+    bulletActiveClass: 'swiper-gallery-bullet-active',
   },
 
   navigation: {
-    nextEl: '.gallery-next',
-    prevEl: '.gallery-prev',
+    nextEl: '[data-gallery-next]',
+    prevEl: '[data-gallery-prev]',
   },
 
   keyboard: { enabled: true },

@@ -4,7 +4,7 @@ import { Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-const featuresSwiper = new Swiper('.features-swiper', {
+const featuresSwiper = new Swiper('#features-swiper', {
   modules: [Pagination, Mousewheel, Keyboard],
   direction: 'horizontal',
   slidesPerView: 1,
@@ -13,10 +13,8 @@ const featuresSwiper = new Swiper('.features-swiper', {
   grabCursor: true,
 
   pagination: {
-    el: '.features-pagination',
+    el: '[data-features-pagination]',
     clickable: true,
-    // dynamicBullets: true,
-    // dynamicMainBullets: 1,
   },
 
   keyboard: {

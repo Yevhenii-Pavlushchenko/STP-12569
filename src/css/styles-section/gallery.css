@@ -95,7 +95,7 @@
   transform: none !important;
 }
 
-.gallery-bullet {
+.swiper-gallery-bullet {
   width: 8px !important;
   height: 8px !important;
   background-color: var(--white-color) !important;
@@ -106,7 +106,7 @@
   display: block;
   opacity: 1 !important;
 
-  &.gallery-bullet-active {
+  &.swiper-gallery-bullet-active {
     &::after {
       content: '';
       position: absolute;

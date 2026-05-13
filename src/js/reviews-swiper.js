@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-const reviewsSwiper = new Swiper('.reviews-swiper', {
+const reviewsSwiper = new Swiper('#reviews-swiper', {
   modules: [Pagination, Navigation, Mousewheel, Keyboard],
   slidesPerView: 1,
   centeredSlides: true,
@@ -22,15 +22,15 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
   },
 
   pagination: {
-    el: '.reviews-pagination',
+    el: '[data-reviews-pagination]',
     clickable: true,
-    bulletClass: 'reviews-bullet',
-    bulletActiveClass: 'reviews-bullet-active',
+    bulletClass: 'swiper-reviews-bullet',
+    bulletActiveClass: 'swiper-reviews-bullet-active',
   },
 
   navigation: {
-    nextEl: '.reviews-next',
-    prevEl: '.reviews-prev',
+    nextEl: '[data-reviews-next]',
+    prevEl: '[data-reviews-prev]',
   },
 
   keyboard: { enabled: true },
